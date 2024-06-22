@@ -1,0 +1,123 @@
+
+
+// Configure wolfssl 5.7.0 with options:
+//---------------------------------
+./configure --enable-tls13 --enable-dtls --enable-dtls13  --enable-session-ticket --enable-psk --enable-opensslextra CFLAGS="-DWOLFSSL_STATIC_PSK" 
+// debug can be removed for benchmarking
+
+// Build wolfssl
+//---------------------------------
+make
+
+// Generate data for figure 2
+//---------------------------------
+./wolfcrypt/benchmark/benchmark
+
+// Generate data for figure 3,4
+//---------------------------------
+//TLS 1.3 
+./examples/server/server -v 4 -i
+./examples/client/client -v 4 -b [X]
+
+./examples/server/server -v 4 -B [X]
+./examples/client/client -v 4 -B [X]
+
+//DTLS 1.3 
+//---------------------------------
+./examples/server/server -u -v 4 -i
+./examples/client/client -u -v 4 -b [X]
+
+./examples/server/server -v 4 -B [X]
+./examples/client/client -v 4 -B [X] // X < 10000
+
+
+//Session resumption + TLS 1.3
+//---------------------------------
+./examples/server/server -r -v 4 -i
+./examples/client/client -r -v 4 -b [X]
+
+./examples/server/server -r -v 4 -B [X]
+./examples/client/client -r -v 4 -B [X]
+
+//PSK + TLS 1.3
+//---------------------------------
+./examples/server/server -s -v 4 -i
+./examples/client/client -s -v 4 -b [X]
+
+./examples/server/server -s -v 4 -B [X]
+./examples/client/client -s -v 4 -B [X]
+
+
+//Wolfcrypt benchmark no acceleration
+//---------------------------------
+//Setup
+//---------------------------------
+
+./configure -CFLAGS=”-DWOLFSSL_BENCHMARK_FIXED_UNITS_MB"
+sudo make 
+./wolfcrypt/benchmark/benchmark
+
+
+// Generate data for figure 5
+//---------------------------------
+//Setup
+//---------------------------------
+//Wolfcrypt benchmark fastmath
+./configure –enable-fastmath 
+CFLAGS=”-DWOLFSSL_BENCHMARK_FIXED_UNITS_MB"
+sudo make
+./examples/wolfcrypt/benchmark
+
+
+//Wolfcrypt benchmark fasthugemath
+//Setup
+//---------------------------------
+./configure –enable-fasthugemath 
+CFLAGS=”-DWOLFSSL_BENCHMARK_FIXED_UNITS_MB"
+
+sudo make
+./examples/wolfcrypt/benchmark 
+
+
+Security analysis
+
+//MITM arp.spoof
+
+
+// TCP proxy
+test connection
+sudo bettercap 
+
+set tcp.proxy.script <path to script module>
+set tcp.proxy.address <localhost>:<port> 
+// in our case 127:0.0.1 && 11111
+with files 
+
+
+// this launch can be used if building bettercap from source. 
+// Same steps as above
+[launch.js]
+// called when the script is loaded
+function onLoad() {
+    log('loading');
+    run('set tcp.address 127.0.0.1');
+    run('set tcp.port 11111');
+    run('set tcp.proxy.script script-tcp-proxy.js')
+    run('tcp.proxy on')
+}
+
+onLoad()
+
+[script-tcp-proxy.js]
+// called when data is available
+// return an array of bytes to override "data"
+function onData(from, to, ) {
+    log('data')
+    log(from,to,data)
+}
+
+
+//we are now man in the middle between this server 
+//and connections that would be sent to 
+//us if we now pretend to be this server
+
