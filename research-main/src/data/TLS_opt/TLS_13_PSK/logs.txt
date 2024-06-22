@@ -1,0 +1,17 @@
+peer has no cert!
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is (null)
+SSL curve name is SECP256R1
+Server Random : 57353DB136EEBDE1AF511F66431271D266F0EA18B4664BF61571F8652E3BD727
+Client message: hello wolfssl!
+
+
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is (null)
+SSL curve name is SECP256R1
+Session timeout set to 500 seconds
+Client Random : 00F5BD258AC131FFF4BAA41B2BD3DD0D2A9995D66178EE762EB9FB029B11FAAD
+Session Ticket CB: ticketSz = 175, ctx = initial session
+I hear you fa shizzle!

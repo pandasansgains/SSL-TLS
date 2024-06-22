@@ -1,0 +1,22 @@
+   DTLS_SIZE_ERROR              = -439,   /* Trying to send too much data */
+
+Cannot have 10000 for DTLS in bytsize
+
+In wireshark those packets are recognised as  DTLS 1.2 as not supported yet
+
+SSL version is DTLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is SHA256
+SSL curve name is SECP256R1
+Server Random : 686B918E8B2E2CEDAC7965C2D3D0E886BDDEE253A7E0FA4AE6B9FDE8772A4C48
+
+
+SSL version is DTLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is SHA256
+SSL curve name is SECP256R1
+Session timeout set to 500 seconds
+Client Random : E7427820DF96E9BBB09B918F25AC14B3DE06229BD165C935F003DA594810B5E6
+Session Ticket CB: ticketSz = 175, ctx = initial session
+I hear you fa shizzle!
+

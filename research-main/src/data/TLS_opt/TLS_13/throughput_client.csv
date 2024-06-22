@@ -1,0 +1,7 @@
+conn_type,Kind,bytes,RX MBps,TX MBps
+TLS_13,client,100,0.075,2.273
+TLS_13,client,1000,6.623,20.725
+TLS_13,client,2500,11.148,25.641
+TLS_13,client,5000,11.799,27.248
+TLS_13,client,10000,11.628,34.542
+

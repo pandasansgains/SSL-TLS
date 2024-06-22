@@ -1,0 +1,12 @@
+./examples/server/server -u -v 4 -i
+./examples/client/client -u -v 4 -b 10
+./examples/client/client -u -v 4 -b 100
+./examples/client/client -u -v 4 -b 1000
+./examples/client/client -u  -v 4 -b 10000
+./examples/server/server -u -v 4 -B 10
+./examples/client/client -u -v 4 -B 10
+./examples/client/client -u -v 4 -B 100
+./examples/client/client -u -v 4 -B 1000
+./examples/client/client -u -v 4 -B 10000
+
+//TODO graph server and client together

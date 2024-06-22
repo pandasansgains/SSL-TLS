@@ -1,0 +1,33 @@
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is SHA256
+SSL curve name is SECP256R1
+Server Random : 96771870EF793B730DA51FDDE45A4F690BC84518156664B73211BBC0240A2DDA
+Client message: hello wolfssl!
+peer has no cert!
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is (null)
+SSL curve name is SECP256R1
+SSL reused session
+Server Random : DA9D63A865398C692301874A35A968989554F7B307AF9628281942FEB16A91E1
+Client message: resuming wolfssl!
+
+
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is SHA256
+SSL curve name is SECP256R1
+Session timeout set to 500 seconds
+Client Random : B8B00E6099029925CADA5A6A9EF14DAD57833393E58D88B44961B5CA2952D08B
+Session Ticket CB: ticketSz = 175, ctx = initial session
+I hear you fa shizzle!
+peer has no cert!
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is (null)
+SSL curve name is SECP256R1
+SSL reused session
+reused session id
+Session Ticket CB: ticketSz = 175, ctx = resumed session
+ resumeI hear you fa shizzle!

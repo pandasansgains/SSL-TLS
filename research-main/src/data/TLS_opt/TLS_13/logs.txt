@@ -1,0 +1,16 @@
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is SHA256
+SSL curve name is SECP256R1
+Server Random : 87437DCBCDFBC77AA8A1B04E3E53A01444C1ECB60B00B16347606F7115570FB5
+Client message: hello wolfssl!
+
+
+SSL version is TLSv1.3
+SSL cipher suite is TLS_AES_128_GCM_SHA256
+SSL signature algorithm is SHA256
+SSL curve name is SECP256R1
+Session timeout set to 500 seconds
+Client Random : 6AE5BA14372CED5AEEE690B0B7C52E0F92597ABBED949CBE12081A73C9FD738A
+Session Ticket CB: ticketSz = 175, ctx = initial session
+I hear you fa shizzle!
