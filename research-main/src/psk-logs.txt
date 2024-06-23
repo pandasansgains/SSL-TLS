@@ -1,0 +1,609 @@
+Derive Server IV
+wolfSSL Leaving DoTls13HandShakeMsgType(), return 0
+wolfSSL Leaving DoTls13HandShakeMsg, return 0
+Shrinking input buffer
+connect state: FIRST_REPLY_DONE
+connect state: FIRST_REPLY_FIRST
+connect state: FIRST_REPLY_SECOND
+connect state: FIRST_REPLY_THIRD
+connect state: FIRST_REPLY_FOURTH
+wolfSSL Entering SendTls13Finished
+growing output buffer
+wolfSSL Entering BuildTls13Message
+wolfSSL Entering EncryptTls13
+wolfSSL Leaving BuildTls13Message, return 0
+Derive Resumption Secret
+Shrinking output buffer
+wolfSSL Leaving SendTls13Finished, return 0
+sent: finished
+connect state: FINISHED_DONE
+wolfSSL Entering FreeHandshakeResources
+Signature Algorithms extension to free
+Supported Groups extension free
+Supported Versions extension free
+Key Share extension free
+wolfSSL Leaving wolfSSL_connect_TLSv13, return 1
+Early Data was not sent.
+wolfSSL Entering wolfSSL_shutdown
+wolfSSL Entering SendAlert
+wolfSSL Entering SendAlert
+SendAlert: 0 close_notify
+growing output buffer
+wolfSSL Entering BuildMessage
+wolfSSL Entering BuildTls13Message
+wolfSSL Entering EncryptTls13
+wolfSSL Leaving BuildTls13Message, return 0
+Shrinking output buffer
+wolfSSL Leaving SendAlert, return 0
+wolfSSL Leaving wolfSSL_shutdown, return 0
+wolfSSL Entering wolfSSL_free
+Free SSL: 0x5579aa78e0
+Free'ing client ssl
+wolfSSL Entering DtlsMsgPoolReset
+ECH extension free
+PSK Key Exchange Modes extension free
+Pre-Shared Key extension free
+Encrypt-Then-Mac extension free
+wolfSSL Entering ClientSessionToSession
+wolfSSL Entering wolfSSL_FreeSession
+wolfSSL_FreeSession full free
+wolfSSL Entering wolfSSL_sk_CIPHER_free
+wolfSSL Entering wolfSSL_sk_free
+wolfSSL Entering wolfSSL_sk_X509_pop_free
+wolfSSL Entering wolfSSL_sk_pop_free
+wolfSSL Entering wolfSSL_sk_X509_pop_free
+wolfSSL Entering wolfSSL_sk_pop_free
+wolfSSL Entering wolfSSL_sk_X509_NAME_pop_free
+wolfSSL Entering wolfSSL_sk_pop_free
+CTX ref count not 0 yet, no free
+wolfSSL Leaving wolfSSL_free, return 0
+wolfSSL Entering wolfSSL_new
+wolfSSL Entering ReinitSSL
+RNG_HEALTH_TEST_CHECK_SIZE = 128
+sizeof(seedB_data)         = 128
+opened /dev/urandom.
+rnd read...
+wolfSSL Entering SetSSL_CTX
+wolfSSL Entering wolfSSL_NewSession
+InitSSL done. return 0 (success)
+wolfSSL_new InitSSL success
+wolfSSL Leaving wolfSSL_new InitSSL =, return 0
+wolfSSL Entering EccMakeKey
+wolfSSL Leaving EccMakeKey, return 0
+wolfSSL Entering DhGenKeyPair
+wolfSSL Leaving DhGenKeyPair, return 0
+wolfSSL Entering wolfSSL_set_groups
+wolfSSL Entering wolfSSL_set_fd
+wolfSSL Entering wolfSSL_set_read_fd
+wolfSSL Leaving wolfSSL_set_read_fd, return 1
+wolfSSL Entering wolfSSL_set_write_fd
+wolfSSL Leaving wolfSSL_set_write_fd, return 1
+TLS 1.2 or lower
+wolfSSL Entering wolfSSL_connect
+wolfSSL Entering ReinitSSL
+wolfSSL Entering RetrySendAlert
+wolfSSL Entering SendTls13ClientHello
+Adding signature algorithms extension
+Adding supported versions extension
+growing output buffer
+ECH extension to write
+TLSX_ECH_Write
+RNG_HEALTH_TEST_CHECK_SIZE = 128
+sizeof(seedB_data)         = 128
+opened /dev/urandom.
+rnd read...
+PSK Key Exchange Modes extension to write
+Supported Versions extension to write
+Signature Algorithms extension to write
+Encrypt-Then-Mac extension to write
+Supported Groups extension to write
+Key Share extension to write
+Session Ticket extension to write
+Pre-Shared Key extension to write
+wolfSSL Entering WritePSKBinders
+wolfSSL Entering VerifyClientSuite
+Derive Early Secret
+Derive Binder Key
+Derive Finished Secret
+wolfSSL Leaving WritePSKBinders, return 0
+Shrinking output buffer
+wolfSSL Leaving SendTls13ClientHello, return 0
+connect state: CLIENT_HELLO_SENT
+Server state up to needed state.
+Progressing server state...
+wolfSSL Entering wolfSSL_connect_TLSv13
+wolfSSL Entering ReinitSSL
+wolfSSL Entering RetrySendAlert
+wolfSSL Entering RetrySendAlert
+growing input buffer
+received record layer msg
+got HANDSHAKE
+wolfSSL Entering wolfSSL_get_options
+wolfSSL Entering DoTls13HandShakeMsg
+wolfSSL Entering EarlySanityCheckMsgReceived
+wolfSSL Leaving EarlySanityCheckMsgReceived, return 0
+wolfSSL Entering DoTls13HandShakeMsgType
+processing server hello
+wolfSSL Entering DoTls13ServerHello
+Supported Versions extension received
+Pre-Shared Key extension received
+Key Share extension received
+wolfSSL Entering EccSharedSecret
+wolfSSL Leaving EccSharedSecret, return 0
+Skipping Supported Versions - already processed
+wolfSSL Entering VerifyClientSuite
+wolfSSL Entering VerifyClientSuite
+Derive Early Secret
+wolfSSL Leaving DoTls13ServerHello, return 0
+Derive Early Secret
+Derive Handshake Secret
+Derive Client Handshake Secret
+Derive Server Handshake Secret
+Derive Client Key
+Derive Server Key
+Derive Client IV
+Derive Server IV
+wolfSSL Leaving DoTls13HandShakeMsgType(), return 0
+wolfSSL Leaving DoTls13HandShakeMsg, return 0
+Shrinking input buffer
+connect state: HELLO_AGAIN
+connect state: HELLO_AGAIN_REPLY
+wolfSSL Entering RetrySendAlert
+growing input buffer
+wolfSSL Entering DecryptTls13
+received record layer msg
+got HANDSHAKE
+wolfSSL Entering wolfSSL_get_options
+wolfSSL Entering DoTls13HandShakeMsg
+wolfSSL Entering EarlySanityCheckMsgReceived
+wolfSSL Leaving EarlySanityCheckMsgReceived, return 0
+wolfSSL Entering DoTls13HandShakeMsgType
+processing encrypted extensions
+wolfSSL Entering DoTls13EncryptedExtensions
+Supported Groups extension received
+wolfSSL Leaving DoTls13EncryptedExtensions, return 0
+wolfSSL Leaving DoTls13HandShakeMsgType(), return 0
+wolfSSL Leaving DoTls13HandShakeMsg, return 0
+Shrinking input buffer
+wolfSSL Entering RetrySendAlert
+growing input buffer
+wolfSSL Entering DecryptTls13
+received record layer msg
+got HANDSHAKE
+wolfSSL Entering wolfSSL_get_options
+wolfSSL Entering DoTls13HandShakeMsg
+wolfSSL Entering EarlySanityCheckMsgReceived
+wolfSSL Leaving EarlySanityCheckMsgReceived, return 0
+wolfSSL Entering DoTls13HandShakeMsgType
+processing finished
+wolfSSL Entering DoTls13Finished
+Derive Finished Secret
+Derive Finished Secret
+wolfSSL Leaving DoTls13Finished, return 0
+Derive Master Secret
+wolfSSL Entering Derive Exporter Secret
+Derive Client Traffic Secret
+Derive Server Traffic Secret
+Derive Client Key
+Derive Server Key
+Derive Client IV
+
+
+
+---- server
+
+
+Entering DecodeAuthInfo
+        Parsed new trusted peer cert
+        Already have this CA, not adding again
+        Freeing parsed trusted peer cert
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+        Freeing der trusted peer cert
+                OK Freeing der trusted peer cert
+wolfSSL Leaving AddTrustedPeer, return 0
+   Processed a CA
+Processed at least one valid CA. Other stuff OK
+wolfSSL_CTX_load_verify_locations_ex
+Getting dynamic buffer
+Processing CA PEM file
+wolfSSL Entering PemToDer
+Adding a CA
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering GetAlgoId
+wolfSSL Entering DecodeCertExtensions
+wolfSSL Entering DecodeBasicCaConstraint
+wolfSSL Entering DecodeSubjKeyId
+wolfSSL Entering DecodeAuthKeyId
+wolfSSL Entering DecodeKeyUsage
+wolfSSL Entering DecodeAuthInfo
+CA found
+        Parsed new CA
+        Already have this CA, not adding again
+        Freeing Parsed CA
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+        Freeing der CA
+                OK Freeing der CA
+wolfSSL Leaving AddCA, return 0
+   Processed a CA
+wolfSSL Entering PemToDer
+Adding a CA
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering GetAlgoId
+wolfSSL Entering DecodeCertExtensions
+wolfSSL Entering DecodeBasicCaConstraint
+wolfSSL Entering DecodeSubjKeyId
+wolfSSL Entering DecodeAuthKeyId
+wolfSSL Entering DecodeKeyUsage
+wolfSSL Entering DecodeAuthInfo
+        Parsed new CA
+        Already have this CA, not adding again
+        Freeing Parsed CA
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+        Freeing der CA
+                OK Freeing der CA
+wolfSSL Leaving AddCA, return 0
+   Processed a CA
+Processed at least one valid CA. Other stuff OK
+wolfSSL Entering wolfSSL_CTX_trust_peer_cert
+Getting dynamic buffer
+Processing CA PEM file
+wolfSSL Entering PemToDer
+Adding a Trusted Peer Cert
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering GetAlgoId
+wolfSSL Entering DecodeCertExtensions
+wolfSSL Entering DecodeBasicCaConstraint
+wolfSSL Entering DecodeSubjKeyId
+wolfSSL Entering DecodeAuthKeyId
+wolfSSL Entering DecodeKeyUsage
+wolfSSL Entering DecodeAuthInfo
+CA found
+        Parsed new trusted peer cert
+        Already have this CA, not adding again
+        Freeing parsed trusted peer cert
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+        Freeing der trusted peer cert
+                OK Freeing der trusted peer cert
+wolfSSL Leaving AddTrustedPeer, return 0
+   Processed a CA
+wolfSSL Entering PemToDer
+Adding a Trusted Peer Cert
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Getting Cert Name
+wolfSSL Entering wolfSSL_X509_NAME_new_ex
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_X509_NAME_new
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+Unknown encoding type, default UTF8
+wolfSSL Entering wolfSSL_X509_NAME_add_entry_by_NID
+Found place for name entry
+wolfSSL Entering wolfSSL_sk_push
+wolfSSL Entering wolfSSL_sk_new_node
+wolfSSL Entering wolfSSL_X509_NAME_ENTRY_free
+wolfSSL Entering GetAlgoId
+wolfSSL Entering DecodeCertExtensions
+wolfSSL Entering DecodeBasicCaConstraint
+wolfSSL Entering DecodeSubjKeyId
+wolfSSL Entering DecodeAuthKeyId
+wolfSSL Entering DecodeKeyUsage
+wolfSSL Entering DecodeAuthInfo
+        Parsed new trusted peer cert
+        Already have this CA, not adding again
+        Freeing parsed trusted peer cert
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+wolfSSL Entering wolfSSL_X509_NAME_free
+wolfSSL Entering wolfSSL_sk_free
+        Freeing der trusted peer cert
+                OK Freeing der trusted peer cert
+wolfSSL Leaving AddTrustedPeer, return 0
+   Processed a CA
